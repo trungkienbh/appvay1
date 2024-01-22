@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title><Somnus:sitecfg name="sitetitle"/></title>
+	<script type="text/javascript">
+
+		/*
+		  *判断窗口尺寸大小
+		  *赋值 html font-size
+		 */
+		(function (doc, win) {  
+		    var docEl = doc.documentElement,    
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+		    recalc = function () {    
+		    var clientWidth = docEl.clientWidth;    
+		    if (!clientWidth) return;   
+		    if(clientWidth>750)
+		    {
+		    	clientWidth=750;
+		    } 
+		    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';    
+		    document.body.style.visibility="visible"; 
+		    var clientHeight = document.documentElement.clientHeight;
+		    var appDom = document.getElementById("bxb-app");
+		    appDom.setAttribute('style','min-height:'+clientHeight+"px");
+		};    
+		if (!doc.addEventListener) return;    
+		win.addEventListener(resizeEvt, recalc, false);    
+		doc.addEventListener('DOMContentLoaded', recalc, false);    
+		})(document, window);  
+	</script>
+	<link href="/Public/news/css/weui.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/jquery-weui.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/swiper-4.3.5.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/style.css?v1.3" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="loading" id="loading">
+		<img src="/Public/home/imgs/loading-0.gif" alt="加载中">
+	</div>
+	<div id="bxb-app" class="bxb-bottom-num bxb-p94-top bxb-p50-bottom bxb-relative">
+		<div id="bxb-top-bar" class="bxb-top-bar bxb-relative bxb-flex">
+			<a href="javascript:void(0);" onClick="javascript :history.back(-1);" class="btn pull-left bxb-text-left pic">
+				<svg class="icon" aria-hidden="true">
+				    <use xlink:href="#icon-iconfont0104"></use>
+				</svg>
+			</a>
+			<h5 class="tit bxb-text-center">邀请好友</h5>
+			
+		</div>
+
+		<div class="bxb-invitation-box bxb-p30-bottom">
+			
+		
+			<div class="bxb-invitation-ban bxb-relative">
+				<img src="/Public/news/images/ban02.jpg" alt="邀请好友">
+				 
+			</div>
+
+			<div class="bxb-invitation-money bxb-text-center">
+				<ul class="bxb-text-center bxb-flex">
+					<li>
+						<h6 class="bxb-focus">可提现金额(元)</h6>
+						<h3><span class="num"><?php 
+								if($count1<3){
+									echo $count1*20;
+								}elseif($count1>2 and $count1<5){
+									echo $count1*30;
+								}elseif($count1>4 and $count1<10){
+									echo $count1*40;
+								}elseif($count1>9 and $count1<30){
+									echo $count1*50;
+								}else{
+									echo $count1*60;
+								}
+						 ?></span><i class="btn">提现</i></h3>
+					</li>
+					<li>
+						<h6 class="bxb-focus">成功邀请</h6>
+						<h3><span class="num">{$count1}</span>人</h3>
+					</li>
+					<li>
+						<h6 class="bxb-focus">已提现金额(元)</h6>
+						<h3><span class="num">{$money}</span></h3>
+					</li>
+				</ul>
+			</div>
+			
+			<div class="bxb-invitation-table bxb-bg-fff bxb-m20-top ">
+			    <div class="bxb-tit-num01">
+					<h6><span></span>现金奖励</h6>
+					<div class="bxb-line1px"></div>
+				</div>
+				<div class="tableBox bxb-p50">
+					<table class="bxb-margin-center bxb-text-center">
+						<thead>
+							<tr>
+								<th>邀请借款成功人数</th>
+								<th>现金奖励</th>
+							</tr>
+						</thead>
+						<tbody>
+							<tr>
+								<td>1~2人</td>
+								<td><span class="num">20</span>元/人</td>
+							</tr>
+
+							<tr>
+								<td>3~4人</td>
+								<td><span class="num">30</span>元/人</td>
+							</tr>
+
+							<tr>
+								<td>5~9人</td>
+								<td><span class="num">40</span>元/人</td>
+							</tr>
+
+							<tr>
+								<td>10~29人</td>
+								<td><span class="num">50</span>元/人</td>
+							</tr>
+							<tr>
+								<td>30人以上</td>
+								<td><span class="num">60</span>元/人</td>
+							</tr>
+						</tbody>
+					</table>
+				</div>
+				
+			
+			</div>
+
+			<div class="bxb-invitation-cj bxb-bg-fff bxb-m20-top ">
+			    <div class="bxb-tit-num01">
+					<h6><span></span>参与流程</h6>
+					<div class="bxb-line1px"></div>
+				</div>
+				
+				<ul class="bxb-flex">
+					<li>
+						<div class="pic">
+							<svg class="icon" aria-hidden="true">
+							    <use xlink:href="#icon-yaoqing"></use>
+							</svg>
+						</div>
+						<h6 class="bxb-focus">1.邀请好友注册</h6>
+					</li>
+
+					<li>
+						<div class="pic">
+							<svg class="icon" aria-hidden="true">
+							    <use xlink:href="#icon-jiekuan"></use>
+							</svg>
+						</div>
+						<h6 class="bxb-focus">2.好友完成借款</h6>
+					</li>
+
+					<li>
+						<div class="pic">
+							<svg class="icon" aria-hidden="true">
+							    <use xlink:href="#icon-xianjindai"></use>
+							</svg>
+						</div>
+						<h6 class="bxb-focus">3.获取现金奖励</h6>
+					</li>
+				</ul>
+			
+			</div>
+
+		</div>
+
+		<div class="bxb-vip-footer bxb-text-center">
+			<a href="javascript:subForm()" id="btn" class="weui-btn weui-btn_primary">立即邀请</a>
+		</div>
+		
+	</div>
+
+
+	 
+	<script type="text/javascript" src="Public/news/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="/Public/news/js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="/Public/news/js/swiper-4.3.5.min.js"></script>
+	<script type="text/javascript" src="/Public/news/js/city-picker.min.js"></script>
+	<script type="text/javascript" src="http://at.alicdn.com/t/font_822806_7no8lxjltq6.js"></script>
+	<script type="text/javascript" src="/Public/news/js/js.js"></script>
+	<script type="text/javascript">
+
+       $(function(){
+
+       		// 提现
+       		$(".bxb-invitation-box .bxb-invitation-money ul li:nth-child(1) i.btn").click(function(){
+       			if($(".bxb-invitation-box .bxb-invitation-money ul li:nth-child(1) h3 span.num").html()<100)
+       			{
+       				$.alert("金额不足100不能提现");
+       			}
+       			else{
+					$.alert("申请成功,等待审核");
+       			}
+
+       		});
+
+       		// 规则
+       		
+       		$(".bxb-invitation-box .bxb-invitation-ban .rule").click(function(){
+       			$("#rulesPop").popup();
+       		})
+       	
+       })
+	</script>
+ <script>
+function subForm(){
+alert('http://mr.221bk.cn/?invitor={$user}');
+ 
+    
+}
+</script>
+<script type="text/javascript">
+		
+		window.onload=function(){
+		        document.getElementById("loading").style.display="none";
+		    };
+	</script>
+<div style="display: none;">
+	<Somnus:sitecfg name="sitecode"/>
+</div>
+  
+</body>
+
+
+
+</html>

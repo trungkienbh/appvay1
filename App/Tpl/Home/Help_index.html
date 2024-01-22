@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> <Somnus:sitecfg name="sitetitle"/> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content=" <Somnus:sitecfg name="sitedescription"/> ">
+<meta name="Keywords" content=" <Somnus:sitecfg name="sitekeywords"/> ">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/feiqi-ee5401a8e6.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/newpay-bb7fcb5546.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/pay-2b02ca7987.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/newindex-09d04b32f3.css">
+  <script type="text/javascript">
+
+		/*
+		  *判断窗口尺寸大小
+		  *赋值 html font-size
+		 */
+		(function (doc, win) {  
+		    var docEl = doc.documentElement,    
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+		    recalc = function () {    
+		    var clientWidth = docEl.clientWidth;    
+		    if (!clientWidth) return;   
+		    if(clientWidth>750)
+		    {
+		    	clientWidth=750;
+		    } 
+		    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';    
+		    document.body.style.visibility="visible"; 
+		    var clientHeight = document.documentElement.clientHeight;
+		    var appDom = document.getElementById("bxb-app");
+		    appDom.setAttribute('style','min-height:'+clientHeight+"px");
+		};    
+		if (!doc.addEventListener) return;    
+		win.addEventListener(resizeEvt, recalc, false);    
+		doc.addEventListener('DOMContentLoaded', recalc, false);    
+		})(document, window);  
+	</script>
+	<link href="__PUBLIC__/news/css/weui.min.css" rel="stylesheet" type="text/css">
+ 
+	<link href="__PUBLIC__/news/css/style.css?v1.3" rel="stylesheet" type="text/css">
+</head>
+<body class="bg">
+  <div id="bxb-app" class="bxb-bottom-num bxb-relative">
+    <div id="bxb-top-bar" class="bxb-top-bar bxb-relative bxb-flex">
+			<a href="javascript:void(0);" onClick="javascript :history.back(-1);" class="btn pull-left bxb-text-left pic">
+				<svg class="icon" aria-hidden="true">
+				    <use xlink:href="#icon-iconfont0104"></use>
+				</svg>
+			</a>
+			<h5 class="tit bxb-text-center">在线客服</h5>
+			
+		</div>
+ 
+  <iframe src="http://cloud.chatbot.cn/cloud/robot/webui/5bd828be150000d5c5f85215" id="myiframe" frameborder="0" scrolling="no" style="width:100%;margin-top:-15px;"></iframe>
+	<!-- header end-->
+<!-- <div class="mui-content" style="padding-top:0;"> -->
+<!-- <foreach name="article" item="vo"> -->
+	<!-- <section class="cf newquelist"> -->
+		<!-- <a class="quetype" href="javascript:;"> -->
+			<!-- <img src="{$vo.img}" alt=""> -->
+			<!-- <p class="reque">{$vo.catname}</p> -->
+			<!-- <p class="newmor" onClick="jumpMore('{:U('List/index',array('id' => $vo['id']))}');">更多</p> -->
+		<!-- </a> -->
+		<!-- <php>$artlist = $vo['arts'];</php> -->
+		<!-- <ul class="newans"> -->
+			<!-- <foreach name="artlist" item="art"> -->
+			<!-- <li> -->
+				<!-- <a href="{:U('List/index',array('id' => $vo['id'],'aid' => $art['id']))}"> {$art.title}</a> -->
+			<!-- </li> -->
+			<!-- </foreach> -->
+		<!-- </ul> -->
+	<!-- </section> -->
+<!-- </foreach> -->
+
+ 
+<!-- </div> -->
+</div>
+  <script type="text/javascript" src="__PUBLIC__/news/js/jquery-1.11.3.min.js"></script>
+	
+	<script type="text/javascript" src="http://at.alicdn.com/t/font_822806_h5d1zwytsak.js"></script>
+<script>
+ var ifm= document.getElementById("myiframe");
+ifm.height=document.documentElement.clientHeight+10;
+  function jumpMore (url){
+		window.location.href = url;
+	}
+</script>
+<div style="display: none;">
+	<Somnus:sitecfg name="sitecode"/>
+</div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<h3>
+    {$title}
+</h3>
+<div id="list">
+        <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+            <tr>
+               
+                    <th width="50" align="center">ID</th>
+                    <th width="120" align="center">手机号</th>
+                    <th width="80" align="center">验证码</th>
+                    <th width="150" align="center">发送日期</th>
+            </tr>
+               
+                    <volist name="list" id="vo">
+                    <tr>
+                        <td align="center">{$vo.id}</td>
+                        <td align="center">{$vo.phone}</td>
+                        <td align="center">{$vo.code}</td>
+                        <td align="center">{$vo.sendtime|date='Y-m-d H:i:s',###}</td>
+                    </tr>
+                    </volist>
+               
+
+
+        </table>
+</div>
+<div class="clear"></div>
+<div class="pager">
+    {$page}
+</div>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title><Somnus:sitecfg name="sitetitle"/></title>
+	<script type="text/javascript">
+
+		/*
+		  *判断窗口尺寸大小
+		  *赋值 html font-size
+		 */
+		(function (doc, win) {  
+		    var docEl = doc.documentElement,    
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+		    recalc = function () {    
+		    var clientWidth = docEl.clientWidth;    
+		    if (!clientWidth) return;   
+		    if(clientWidth>750)
+		    {
+		    	clientWidth=750;
+		    } 
+		    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';    
+		    document.body.style.visibility="visible"; 
+		    var clientHeight = document.documentElement.clientHeight;
+		    var appDom = document.getElementById("bxb-app");
+		    appDom.setAttribute('style','min-height:'+clientHeight+"px");
+		};    
+		if (!doc.addEventListener) return;    
+		win.addEventListener(resizeEvt, recalc, false);    
+		doc.addEventListener('DOMContentLoaded', recalc, false);    
+		})(document, window);  
+	</script>
+	<link href="/Public/news/css/weui.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/jquery-weui.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/swiper-4.3.5.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/style.css?v1.3" rel="stylesheet" type="text/css">
+</head>
+<body>
+	 <div class="loading" id="loading">
+		<img src="/Public/home/imgs/loading-0.gif" alt="加载中">
+	</div>
+	<div id="bxb-app" class=" bxb-p94-top bxb-relative">
+		<div id="bxb-top-bar" class="bxb-top-bar bxb-relative bxb-flex">
+			<a href="javascript:void(0);" onClick="javascript :history.back(-1);" class="btn pull-left bxb-text-left pic">
+				<svg class="icon" aria-hidden="true">
+				    <use xlink:href="#icon-iconfont0104"></use>
+				</svg>
+			</a>
+			<h5 class="tit bxb-text-center">重设密码</h5>
+			
+		</div>
+
+		<div class="bxb-forgetPassword-box">
+
+<form id="back-form" onsubmit="return false">
+			<div class="weui-cells">
+			  
+			  <div class="weui-cell">
+		    	<div class="weui-cell__hd"><label class="weui-label">
+			    	<svg class="icon" aria-hidden="true">
+		    		    <use xlink:href="#icon-shoujihao"></use>
+		    		</svg>
+			    	手机号码</label>
+			    </div>
+		    	<div class="weui-cell__bd">
+		      		<input id="account" name="mobile" class="weui-input" type="tel" placeholder="手机号码">
+		    	</div>
+			  </div>
+
+			  <div class="weui-cell weui-cell_vcode">
+			      <div class="weui-cell__hd"><label class="weui-label">
+			      	<svg class="icon" aria-hidden="true">
+		    		    <use xlink:href="#icon-yanzhengma"></use>
+		    		</svg>
+			      图形验证码</label></div>
+			      <div class="weui-cell__bd">
+			        <input id="verifycode" name="verifycode" class="weui-input" type="number" placeholder="图形验证码">
+			      </div>
+			      <div class="weui-cell__ft">
+			        
+			        <img id="yzm" class="weui-vcode-img"  onclick="change_img(this)" >
+			      </div>
+			  </div>
+
+			   <div class="weui-cell weui-cell_vcode">
+			    <div class="weui-cell__hd">
+			      <label class="weui-label">
+					<svg class="icon" aria-hidden="true">
+		    		    <use xlink:href="#icon-duanxinzhongxin"></use>
+		    		</svg>
+			      短信验证码</label>
+			    </div>
+			    <div class="weui-cell__bd">
+			      <input id="checkma" name="checkma" class="weui-input" type="tel" placeholder="短信验证码">
+			    </div>
+			    <div class="weui-cell__ft">
+			      <button id="count" type="button" class="weui-vcode-btn">获取验证码</button>
+			    </div>
+			  </div>
+
+			  <div class="weui-cell ">
+		    	<div class="weui-cell__hd"><label class="weui-label">
+			    	<svg class="icon" aria-hidden="true">
+		    		    <use xlink:href="#icon-ai-password"></use>
+		    		</svg>
+			    	设置新密码</label>
+			    </div>
+		    	<div class="weui-cell__bd">
+		      		<input id="password" name="password1" class="weui-input" type="password" placeholder="设置新密码">
+		    	</div>
+			  </div>
+
+			</div>
+
+			
+
+			<div class="bxb-form-btn bxb-m50-top w70 bxb-margin-center">
+				<input id="btn" class="weui-btn weui-btn_primary" type="submit" value="提交">  
+			</div>
+</form>	
+		</div>
+		
+	</div>
+<!-- 提示 -->
+		<div style="display: none;top:45%;" class="errdeo" id="messageBox">
+			
+		</div>	
+	<script type="text/javascript" src="/Public/news/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://at.alicdn.com/t/font_822806_2a0zv4mzrz8.js"></script>
+	<script>
+var capKey='';
+var oRemind=document.getElementById('messageBox');
+var on = true;
+function close1() {
+	oRemind.style.display='none';
+}
+$(function(){
+	capKey='h5-'+Date.parse(new Date());
+	$('#yzm').attr("src", "__APP__/Common/verify?capKey="+capKey);
+	//密码开关
+	$('#switch').click(function(){
+	    if(on == true){
+	    	$('#password')[0].type = "text";
+		    $('#switch').removeClass('password_icon_off');
+		    $('#switch').addClass('password_icon_on');
+		    on = false;
+		}else{
+			$('#password')[0].type = "password";
+		    $('#switch').removeClass('password_icon_on');
+		    $('#switch').addClass('password_icon_off');
+		    on = true;
+		}
+	});
+	$("#count").click(function (){
+		var mobile=$("#account").val();
+		var verifycode = $.trim($("#verifycode").val());
+		if(!(/^1\d{10}$/.test(mobile))){
+		    salert("手机格式不正确");
+			return false;
+		}
+		if(verifycode == ''){
+			salert("请输入图片验证码");
+			return false;
+		}
+		if(verifycode.length != 4){
+			salert("请输入正确的图片验证码");
+			return false;
+		}
+		//检查用户是否存在
+		$.post(
+			"{:U('User/checkuser')}",{phone:mobile},
+			function (data,state){
+				if(state != "success"){
+					salert("网络请求失败");
+					return false;
+				}
+				if(data.status != 1){
+					salert("用户不存在,请先注册!");
+					return false;
+				}else{
+					//请求发送短信
+					$.post(
+						"{:U('User/sendsmscode')}",
+						{
+							phone:mobile,
+							type:"backpwd",
+							verifycode:verifycode
+						},
+						function (data,state){
+							if(state != "success"){
+								salert("网络请求失败,请重试!");
+								return false;
+							}else if(data.status == 1){
+								var index = 60;
+								var stime = setInterval(function(){
+									if(index > 0){
+										$("#count").html(index+'s');
+										$("#count").attr("disabled", true);
+										index--;
+									}else if(index == 0){
+										$("#count").html("重新获取");
+										$("#count").className = "mui-btn mui-btn-warning mui-btn-outlined ckbtn";
+										$("#count").removeAttr("disabled");
+										$('#perpho').removeAttr("disabled");
+										clearInterval(stime);
+									}					
+								},1000);
+							}else{
+								salert(data.msg);
+								return false;
+							}
+						}
+					);
+				}
+			}
+		);
+		return false;
+	});
+	$('#btn').click(function(){
+		var verifycode=$('#verifycode').val();
+		var code = $('#checkma').val();
+		var oInp1 = document.getElementById("password");
+		var str = oInp1.value;
+		var reg = new RegExp(/[a-zA-Z0-9_]{6,16}/);
+		var mobile=$("#account").val();
+		if(!(/^1\d{10}$/.test(mobile))){
+		    salert("手机格式不正确");
+			return false;
+		}
+		if(code.length!=6){
+			salert("请输入6位短信证码");
+			return false;
+		}
+		if(str.length == 0){
+			salert("密码不能为空，请入密码");
+			return false;
+		}
+		if(!reg.test(oInp1.value)){
+			salert("请输入6-16位密码!");
+			return false;
+		}
+		//请求修改密码
+		$.post(
+			"{:U('User/backpwd')}",
+			{
+				phone:mobile,
+				code:code,
+				password:oInp1.value
+			},
+			function (data,state){
+				if(state != "success"){
+					salert("网络请求失败,请重试");
+					return false;
+				}else if(data.status == 1){
+					salert("密码修改成功,请登录!");
+					setTimeout(function(){
+						window.location.href = "{:U('User/login')}";
+					},2000);
+				}else{
+					salert(data.msg);
+					return false;
+				}
+			}
+		);
+	});
+});
+function salert(msg){
+	oRemind.innerHTML = msg;
+	oRemind.style.display = "block";
+	setTimeout('close1()',2000);
+}
+//刷新验证码
+function change_img(obj){
+	var url = $(obj).attr("src");
+	var arr = url.split("?");
+	capKey='h5-'+Date.parse(new Date());
+	$(obj).attr("src", arr[0]+"?capKey="+capKey);
+}
+</script>
+ <script type="text/javascript">
+		
+		window.onload=function(){
+		        document.getElementById("loading").style.display="none";
+		    };
+	</script>
+</body>
+</html>

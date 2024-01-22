@@ -1,0 +1,37 @@
+<h3>
+    <a href="{:U(GROUP_NAME.'/Article/addcat')}" class="actionBtn add">
+        二维码支付
+    </a>
+    {$title}
+</h3>
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+        <tr>
+            <th width="81"><div align="center">ID</div></th>
+            <th width="290" align="left"><div align="center">图片名称</div></th>
+            <th width="204" align="left"><div align="center">添加时间</div></th>
+            <th width="173" align="center"><div align="center">排序</div></th>
+            <th width="451" align="center"><div align="center">操作</div></th>
+        </tr>
+        <foreach name="data" item="vo">
+            <tr>
+                <td align="center"><div align="center">{$vo.id}</div></td>
+                <td align="left"><div align="center">{$vo.name}</div></td>
+                <td><div align="center">{$vo.addtime|date="Y/m/d",###}</div></td>
+                <td align="center"><div align="center">{$vo.sort}</div></td>
+                <td align="center">
+                    <div align="center"><a href="{:U(GROUP_NAME.'/Article/addcat',array('pid'=>$vo['id']))}"></a> 
+					<a href="{:U(GROUP_NAME.'/Article/editcat',array('cid'=>$vo['id']))}">编辑</a> |
+                    <a href="javascript:delCat('{$vo.name}','{:U(GROUP_NAME.'/Article/delcat',array('cid'=>$vo['id']))}');">删除</a> </div></td>
+            </tr>
+        </foreach>
+    </table>
+<script>
+    function delCat(catname,jumpurl){
+        layer.confirm(
+                '确定要删除图片:['+catname+']吗?',
+                function (){
+                    window.location.href = jumpurl;
+                }
+        );
+    }
+</script>

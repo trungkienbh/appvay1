@@ -1,0 +1,55 @@
+<h3>
+    <a href="{:U(GROUP_NAME.'/User/index')}" class="actionBtn">返回列表</a>
+ 	推荐列表
+</h3>
+<!-- header -->
+<header class="mui-bar mui-bar-nav hnav">
+	<a href="{:U('User/index')}" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+	<h1 class="mui-title">我的推荐</h1>
+</header>
+<!-- header end-->
+<div class="mui-content">
+	<empty name="users">
+
+		<div class="atxt">
+			您当前还没有推荐！
+		</div>
+
+		<else />
+		<article class="cominfo">
+			<div class="container">
+				<foreach name="users" item="vo">
+					<div class="inpifo">
+						<div class="cf dant">
+						<?php $info=M('order')->where(array('user'=>$vo['phone']))->find();
+
+  //print_r($info);exit;
+						?>
+							手机号：{$vo.phone} &nbsp;&nbsp; &nbsp;&nbsp;  姓名：{$vo.name}<br>
+							<?php if($info){ ?>
+							订单号：<?php echo $info['ordernum']; ?> &nbsp;&nbsp; &nbsp;&nbsp;  金额：<?php echo $info['money']; ?>
+							<?php } ?>
+						</div>
+					</div>
+				</foreach>
+			</div>
+		</article>
+	</empty>
+	
+	
+</div>
+<script src="__PUBLIC__/home/js/jquery-1-fe84a54bc0.11.1.min.js"></script>
+<script>
+    $('.bottom-bar a').click(function() {
+        $('.bottom-bar a').removeClass('cur');
+        $('.bottom-bar a span').removeClass('cur');
+        $(this).addClass('cur');
+        $(this).find('span').eq(0).addClass('cur');
+    });
+    function toorder() {
+        window.location.href = "{:U('Index/index')}";
+    }
+</script>
+<div style="display: none;">
+	<Somnus:sitecfg name="sitecode"/>
+</div>

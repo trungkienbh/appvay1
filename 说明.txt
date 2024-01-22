@@ -1,0 +1,12 @@
+[会员版]
+伪静态 thinkphp
+修改支付  跟目录下up，最下面修改token和id即可
+数据库  /App/Conf/config.db.php
+后台：/index.php?g=Admin&m=Index&a=login
+
+演示前台：http://jd3.xs2m.cn/
+演示后台：http://jd3.xs2m.cn/index.php?g=Admin&m=System&a=index
+admin  admin001
+（da71e90b2f582f1218113a89be3e0a1a）
+
+随便下源码网www.suibianxia.cn整理提供

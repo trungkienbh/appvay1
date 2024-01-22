@@ -1,0 +1,399 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title><Somnus:sitecfg name="sitetitle"/> </title>
+	<script type="text/javascript">
+
+		/*
+		  *判断窗口尺寸大小
+		  *赋值 html font-size
+		 */
+		(function (doc, win) {  
+		    var docEl = doc.documentElement,    
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+		    recalc = function () {    
+		    var clientWidth = docEl.clientWidth;    
+		    if (!clientWidth) return;   
+		    if(clientWidth>750)
+		    {
+		    	clientWidth=750;
+		    } 
+		    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';    
+		    document.body.style.visibility="visible"; 
+		    var clientHeight = document.documentElement.clientHeight;
+		    var appDom = document.getElementById("bxb-app");
+		    appDom.setAttribute('style','min-height:'+clientHeight+"px");
+		};    
+		if (!doc.addEventListener) return;    
+		win.addEventListener(resizeEvt, recalc, false);    
+		doc.addEventListener('DOMContentLoaded', recalc, false);    
+		})(document, window);  
+	</script>
+	<link href="__PUBLIC__/news/css/weui.min.css" rel="stylesheet" type="text/css">
+	<link href="__PUBLIC__/news/css/jquery-weui.min.css" rel="stylesheet" type="text/css">
+	<link href="__PUBLIC__/news/css/swiper-4.3.5.min.css" rel="stylesheet" type="text/css">
+	<link href="__PUBLIC__/news/css/style.css?v1.3" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="bxb-app" class="bxb-bottom-num bxb-relative">
+		<div id="bxb-banner" class="bxb-banner bxb-box bxb-relative swiper-container">
+			<div class="swiper-wrapper">
+              <div class="swiper-slide bxb-banner-img">
+					<a href="javascript:;"><img src="__PUBLIC__/news/images/ban03.jpg"></a>
+				</div>
+              <div class="swiper-slide bxb-banner-img">
+					<a href="/index.php?m=Info&a=inviteInfo"><img src="__PUBLIC__/news/images/ban02.jpg" ></a>
+				</div>
+				<div class="swiper-slide bxb-banner-img">
+					<a href="/index.php?m=User&a=vip"><img src="__PUBLIC__/news/images/ban01.jpg"></a>
+				</div>
+				
+				
+			</div>
+			<div class="swiper-pagination bxb-banner-focus"></div>
+		</div>
+
+		<!-- 滚动公告 -->
+		<div id="bxb-announcement" class="bxb-announcement bxb-flex bxb-bg-fff">
+			<div class="btn-box bxb-text-center">
+				<svg class="icon" aria-hidden="true">
+				    <use xlink:href="#icon-gonggao"></use>
+				</svg>
+			</div>
+
+			<div class="list-box swiper-container">
+				<ul class="swiper-wrapper">
+				<foreach name="article" item="art">
+					<li class="swiper-slide">
+						<a href="{:U('List/index',array('id' => $art['cid'],'aid' => $art['id']))}">{$art.title}</a>
+					</li>
+					</foreach>
+					 
+				</ul>
+			</div>
+		</div>
+
+
+
+		<div class="bxb-line1px"></div>
+		 
+		<!-- 首页借款 -->
+		<div class="bxb-borrow bxb-bg-fff bxb-m15-top">
+			<h5 class="bxb-text-center">借款额度</h5>
+			<div class="box">
+				<div id="sliderValue" class="weui-slider-box__value bxb-text-center">{:C('cfg_definamoney')}</div>
+				<div class="weui-slider-box bxb-relative bxb-margin-center" id="bxb-borrow-slide">	
+					<div class="start-value num-value bxb-absolute">{:C('cfg_minmoney')}</div>
+				  	<div class="weui-slider bxb-relative">
+				    	<div id="sliderInner" class="weui-slider__inner">
+				     		<div id="sliderTrack" style="width: 100%;" class="weui-slider__track"></div>
+				      		<div id="sliderHandler" style="left: 100%;" class="weui-slider__handler">|||</div>
+				    	</div>
+				 	 </div>
+				 	 <div class="end-value num-value bxb-absolute">{:C('cfg_maxmoney')}</div>
+				</div>
+			</div>
+
+			<h5 class="bxb-text-center">借款天数</h5>
+			<div class="day-box bxb-relative swiper-container bxb-m30-top">
+				<div class="bxb-absolute bxb-z5 num-circle"></div>
+				<ul class="bxb-flex bxb-relative bxb-10 bxb-text-center swiper-wrapper" id="timelimit">
+					 
+				</ul>
+			</div>
+			<div class="bxb-borrow-btn bxb-p60 bxb-m50-top bxb-text-center">
+				<input id="bxb-borrow-submit" class="weui-btn weui-btn_primary" onclick="subForm()" type="submit" value="立即申请" >
+				
+				<p>不向学生群体提供借贷服务</p>
+			</div>
+		</div>
+		<div class="bxb-footer-nav-box">
+			<ul class="bxb-flex">
+				<li class="home focus">
+					<a href="/">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-shouye"></use>
+						</svg>
+						<h6>首页</h6>
+					</a>
+				</li>
+				<li class="bill">
+					<a href="{:U('Order/lists')}">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-zhangdan1"></use>
+						</svg>
+						<h6>账单</h6>
+					</a>
+				</li>
+				 
+				<li class="invitation">
+					<a href="{:U('Info/inviteInfo')}">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-yaoqing"></use>
+						</svg>
+						<h6>邀请</h6>
+					</a>
+				</li>
+				<li class="user">
+					<a href="{:U('User/index')}">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-wodexuanzhong"></use>
+						</svg>
+						<h6>我的</h6>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!--弹窗开始-->
+<div class="emask" id="mask3" style="display: none;"></div>
+<div class="deowin2" style="display:none;" id="deowin31">
+    <div class="deocon2">
+        <div class="divpad2" style="text-align:center;">
+            <p class='tex' style="color: #4c4c4c;line-height: 30px;font-size:16px;"></p>
+        </div>
+        <div class="wobtn">
+            <!-- 一个按钮用这个结构 -->
+                <a id="winbtn3" href="javascript:;">确定</a>
+        </div>
+    </div>
+</div>
+ <div class="deowin2" style="display:none;" id="deowinrz">
+    <div class="deocon2">
+        <div class="divpad2" style="text-align:center;">
+            <p class='tex' style="color: #4c4c4c;line-height: 30px;font-size:16px;"></p>
+        </div>
+        <div class="wobtn">
+            <!-- 一个按钮用这个结构 -->
+                <a id="winbtnrz" href="javascript:;">确定</a>
+        </div>
+    </div>
+</div>
+   <div class="deowin2" style="display:none;" id="deowinbankrz">
+    <div class="deocon2">
+        <div class="divpad2" style="text-align:center;">
+            <p class='tex' style="color: #4c4c4c;line-height: 30px;font-size:16px;"></p>
+        </div>
+        <div class="wobtn">
+            <!-- 一个按钮用这个结构 -->
+                <a id="winbtnbankrz" href="javascript:;">确定</a>
+        </div>
+    </div>
+</div>
+<div style="display:none;">
+<form action="{:U('Order/daikuan')}" method="post" id="orderform">
+	<input type="hidden" name="money" value="" id="order_money" />
+	<input type="hidden" name="month" value="" id="order_month" />
+</form>
+</div>
+<div style="display: none;">
+	<Somnus:sitecfg name="sitecode"/>
+</div>
+	<script type="text/javascript" src="__PUBLIC__/news/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/news/js/jquery-weui.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/news/js/swiper-4.3.5.min.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/news/js/city-picker.min.js"></script>
+	<script type="text/javascript" src="http://at.alicdn.com/t/font_822806_5k2nam2gh6i.js"></script>
+	<script type="text/javascript" src="__PUBLIC__/news/js/js.js"></script>
+<script type="text/javascript">
+var num = 0;
+var MINMONEY = {:C('cfg_minmoney')};
+var MAXMONEY = {:C('cfg_maxmoney')};
+var nowmoney = {};
+var feilv_value = "{:C('cfg_fuwufei')}";
+var months=[{:C('cfg_dkmonths')}];
+var definamonth = {:C('cfg_definamonth')};
+var definamoney = {:C('cfg_definamoney')};
+var STEP = 100;
+var LoginUrl = "{:U('User/login')}";
+var PublicUrl = "{:C('cfg_siteurl')}/Public/";
+$("#order_money").val(definamoney);
+$("#order_month").val(definamonth);
+		// banner
+		window.onload=function(){
+			// banner
+           	var mySwiperBanner = new Swiper('#bxb-banner', {        	
+           		pagination: {
+           		    el: '.bxb-banner-focus',
+           		    clickable :true,
+           		},
+           		autoplay: {
+				    delay: 5000,
+				    stopOnLastSlide: false,
+				    disableOnInteraction: true,
+				  },
+           	});
+
+           	// 公告
+           	var swiperAnnouncement = new Swiper('.bxb-announcement .list-box', {
+		      direction: 'vertical',
+		      autoplay: {
+			    delay: 2000,
+			    stopOnLastSlide: false,
+			    disableOnInteraction: true,
+			  },
+		    });
+
+           	// 选择借款时间
+		    var swiperDay = new Swiper('.bxb-borrow .day-box', {
+		    	watchSlidesProgress:true,
+		    	// effect:"coverflow",
+		      	slidesPerView:"auto",
+		      	spaceBetween: 0,
+		      	centeredSlides: true,
+		      	on: {
+				    progress: function (progress) {
+				    	for (i = 0; i < this.slides.length; i++) { 
+				    		var slide = this.slides.eq(i); 
+				    		var slideProgress = this.slides[i].progress; 
+				    		this.slides.eq(i).css({"opacity":1-Math.abs(slideProgress*0.2),"font-size":(1-Math.abs(slideProgress*0.2))*0.48+"rem"});
+				    	}      
+				    },
+				     slideChange: function(){
+				      // alert('改变"了');
+				      $("#order_month").val($(".bxb-borrow .day-box ul li").eq(this.activeIndex).html());
+					  var definamonth = $(".bxb-borrow .day-box ul li").eq(this.activeIndex).html();
+				    },
+				  },
+				 
+		    });
+			 
+
+       };	
+       $(function(){
+       		//选择借款金额
+			var qujian = ({:C('cfg_maxmoney')}-{:C('cfg_minmoney')}) / 100;
+       		$('#bxb-borrow-slide').slider(function (per) {
+               $('#sliderValue').text({:C('cfg_minmoney')}+per*qujian);
+			   $("#order_money").val({:C('cfg_minmoney')}+per*qujian);
+			   var definamoney = {:C('cfg_minmoney')}+per*qujian;
+               $('#bxb-borrow-slide .handler').text({:C('cfg_minmoney')}+per*qujian)
+           });
+       })
+	</script>
+	<script>
+var user_id = '{$user}';
+var months=[{:C('cfg_dkmonths')}];
+var LoginUrl = "{:U('User/login')}";
+function subForm(){
+	$("#bxb-borrow-submit").val("请求中");
+	$("#bxb-borrow-submit").attr("disabled", true);
+    if(user_id=='0'){
+        window.location.href = LoginUrl;
+        return false;
+    }
+    //判断失败订单是否超过预期
+    console.log(user_id);
+    $.post(
+    	"{:U('Order/checkorder')}",
+    	{},
+    	function(data,state){
+    		if(state != "success"){
+		        $(".tex").html('请求数据失败!');
+		        $("#deowin31").show();
+		        $('#mask3').show();
+    		}else if(data.status == 1){
+				//提交获取支付订单号
+				$.post(
+					"{:U('Order/daikuan',array('trueorder' => 1))}",
+					{
+						money: $("#order_money").val(),
+						month:$("#order_month").val()
+					},
+					function (data,state){
+						if(state != "success"){
+							$(".tex").html('请求数据失败,请重试!');
+							$("#deowin31").show();
+							$('#mask3').show();
+						}else if(data.status != 1){
+							$(".tex").html(data.msg);
+							$("#deowin31").show();
+							$('#mask3').show();
+						}else{
+							//var pid = data.pid;
+							//window.location.href = "/index.php?g=Home&m=Order&a=info&oid="+pid;
+							window.location.href = "{:U('Order/lists')}";
+							isload = true;
+						}
+					}
+				);
+    		}else if(data.status == 2){
+    			$(".tex").html(data.msg);
+		        $("#deowinrz").show();
+		        $('#mask3').show();
+    		}else if(data.status == 3){
+    			$(".tex").html(data.msg);
+		        $("#deowinbankrz").show();
+		        $('#mask3').show();
+    		}else{
+		        $(".tex").html(data.msg);
+		        $("#deowin31").show();
+		        $('#mask3').show();
+    		}
+    	}
+    );
+}
+$(function(){
+	for(var i=0;i<months.length;i++){
+		var tmp;
+		tmp = months[i];
+		var html = '<li class="swiper-slide">'+tmp+'</li>';
+		$("#timelimit").append(html);
+	}
+	$('#winbtn3').click(function(){
+            $('#deowin31').hide();
+            $('#mask3').hide();    
+			$("#bxb-borrow-submit").val("立即申请");
+			$("#bxb-borrow-submit").removeAttr("disabled");	
+       });
+  	$("#winbtnrz").click(function() {
+		window.location.href = '/index.php?m=Info&a=index';
+	});
+  	$("#winbtnbankrz").click(function() {
+		window.location.href = '/index.php?m=Info&a=bankinfo';
+	});
+});
+</script>
+	
+<script>
+apiready = function(){
+var dialogBox = api.require('dialogBox');
+dialogBox.discount({
+    rect: {
+        w: 240,
+        h: 320
+    },
+  tapClose:true,
+    styles: {
+        bg: '#FFF',
+        image: {
+            path: 'widget://image/yaoqing.jpg',
+            marginB: 200
+        },
+        cancel: {
+            icon: 'widget://image/del.png',
+          	marginB: 150,
+            w: 30,
+            h: 30
+        }
+    }
+}, function(ret) {
+  	if (ret.eventType == 'image') {
+        window.location.href="/index.php?m=Info&a=inviteInfo";
+      	dialogBox.close({
+            dialogName: 'discount'
+        });
+    }
+    if (ret.eventType == 'cancel') {
+        dialogBox.close({
+            dialogName: 'discount'
+        });
+    }
+}); 
+};
+</script>
+</body>
+</html>

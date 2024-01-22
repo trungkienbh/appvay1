@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+	<meta name="apple-mobile-web-app-capable" content="yes">
+	<title>发现</title>
+	<script type="text/javascript">
+
+		/*
+		  *判断窗口尺寸大小
+		  *赋值 html font-size
+		 */
+		(function (doc, win) {  
+		    var docEl = doc.documentElement,    
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+		    recalc = function () {    
+		    var clientWidth = docEl.clientWidth;    
+		    if (!clientWidth) return;   
+		    if(clientWidth>750)
+		    {
+		    	clientWidth=750;
+		    } 
+		    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';    
+		    document.body.style.visibility="visible"; 
+		    var clientHeight = document.documentElement.clientHeight;
+		    var appDom = document.getElementById("bxb-app");
+		    appDom.setAttribute('style','min-height:'+clientHeight+"px");
+		};    
+		if (!doc.addEventListener) return;    
+		win.addEventListener(resizeEvt, recalc, false);    
+		doc.addEventListener('DOMContentLoaded', recalc, false);    
+		})(document, window);  
+	</script>
+	<link href="/Public/news/css/weui.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/jquery-weui.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/swiper-4.3.5.min.css" rel="stylesheet" type="text/css">
+	<link href="/Public/news/css/style.css?v1.3" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div id="bxb-app" class="bxb-bottom-num bxb-p94-top bxb-relative">
+		<div id="bxb-top-bar" class="bxb-top-bar bxb-relative bxb-flex">
+			<a href="javascript:void(0);" onClick="javascript :history.back(-1);" class="btn pull-left bxb-text-left pic">
+				<svg class="icon" aria-hidden="true">
+				    <use xlink:href="#icon-iconfont0104"></use>
+				</svg>
+			</a>
+			<h5 class="tit bxb-text-center">发 现</h5>
+			
+		</div>
+
+		<div class="bxb-found-list">
+			
+			<div class="bxb-found-list-con">
+				<div class="bxb-list-tit bxb-p30-top bxb-p20-bottom">
+					<h5 class="bxb-focus">专属推荐<span>跟您审核资料相似的用户已成功申请以下贷款</span></h5>
+				</div>
+
+				<div class="list">
+					<ul>
+						<li class="bxb-line1pxBox">
+							<a href="javascript:tishi();" class="bxb-block bxb-flex">
+								<div class="pic">
+									<img src="/Public/news/images/gs01.png" alt="公司名称">
+								</div>
+								<div class="text bxb-focus">
+									<h6>闪来钱<span>急速提现 5000轻松借</span></h6>
+									<p><span>额度:<i class="focus">1000-5000</i></span></p>
+									<p><span>日利率:<i class="focus">0.006%</i></span> <span>期限<i class="focus">7-14天</i></span></p>
+								</div>
+								<div class="btn">
+									<span>立即申请</span>
+								</div>
+							</a>
+						</li>
+
+						<li class="bxb-line1pxBox">
+							<a href="javascript:tishi();" class="bxb-block bxb-flex">
+								<div class="pic">
+									<img src="/Public/news/images/gs01.png" alt="公司名称">
+								</div>
+								<div class="text bxb-focus">
+									<h6>闪来钱<span>急速提现 5000轻松借</span></h6>
+									<p><span>额度:<i class="focus">1000-5000</i></span></p>
+									<p><span>日利率:<i class="focus">0.006%</i></span> <span>期限<i class="focus">7-14天</i></span></p>
+								</div>
+								<div class="btn">
+									<span>立即申请</span>
+								</div>
+							</a>
+						</li>
+
+						 
+					</ul>
+				</div>
+				
+			</div>
+		</div>
+		
+		
+		<div class="bxb-footer-nav-box">
+			<ul class="bxb-flex">
+				<li class="home ">
+					<a href="/">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-shouye"></use>
+						</svg>
+						<h6>首页</h6>
+					</a>
+				</li>
+				<li class="bill ">
+					<a href="/index.php?m=Order&a=lists">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-zhangdan1"></use>
+						</svg>
+						<h6>账单</h6>
+					</a>
+				</li>
+				<li class="found focus">
+					<a href="/found.html">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-find-fill-copy"></use>
+						</svg>
+						<h6>发现</h6>
+					</a>
+				</li>
+				<li class="invitation">
+					<a href="/index.php?m=Info&a=inviteInfo">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-yaoqing"></use>
+						</svg>
+						<h6>邀请</h6>
+					</a>
+				</li>
+				<li class="user">
+					<a href="/index.php?m=User&a=index">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-wodexuanzhong"></use>
+						</svg>
+						<h6>我的</h6>
+					</a>
+				</li>
+			</ul>
+		</div>
+	</div>
+<!--弹窗开始-->
+<div class="emask" id="mask3" style="display: none;"></div>
+<div class="deowin2" style="display:none;" id="deowin31">
+    <div class="deocon2">
+        <div class="divpad2" style="text-align:center;">
+            <p class='tex' style="color: #4c4c4c;line-height: 30px;font-size:16px;"></p>
+        </div>
+        <div class="wobtn">
+            <!-- 一个按钮用这个结构 -->
+                <a id="winbtn3" href="javascript:;">确定</a>
+        </div>
+    </div>
+</div>
+	<script type="text/javascript" src="/Public/news/js/jquery-1.11.3.min.js"></script>
+	<script type="text/javascript" src="http://at.alicdn.com/t/font_822806_6nnwgytn179.js"></script>
+	<script type="text/javascript">
+		function tishi(){
+         $(".tex").html('即将开放，敬请期待！');
+        $("#deowin31").show();
+        $('#mask3').show();
+      };
+		$(function(){
+				$('#winbtn3').click(function(){
+			            $('#deowin31').hide();
+			            $('#mask3').hide();    
+			       });
+		});
+	</script>
+</body>
+</html>

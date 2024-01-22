@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> <Somnus:sitecfg name="sitetitle"/> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content=" <Somnus:sitecfg name="sitedescription"/> ">
+<meta name="Keywords" content=" <Somnus:sitecfg name="sitekeywords"/> ">
+  	<link href="__PUBLIC__/news/css/weui.min.css" rel="stylesheet" type="text/css">
+	<link href="__PUBLIC__/news/css/style.css?v1.3" rel="stylesheet" type="text/css">
+  <script type="text/javascript">
+
+		/*
+		  *判断窗口尺寸大小
+		  *赋值 html font-size
+		 */
+		(function (doc, win) {  
+		    var docEl = doc.documentElement,    
+		    resizeEvt = 'orientationchange' in window ? 'orientationchange' : 'resize',    
+		    recalc = function () {    
+		    var clientWidth = docEl.clientWidth;    
+		    if (!clientWidth) return;   
+		    if(clientWidth>750)
+		    {
+		    	clientWidth=750;
+		    } 
+		    docEl.style.fontSize = 100 * (clientWidth / 750) + 'px';    
+		    document.body.style.visibility="visible"; 
+		    var clientHeight = document.documentElement.clientHeight;
+		    var appDom = document.getElementById("bxb-app");
+		    appDom.setAttribute('style','min-height:'+clientHeight+"px");
+		};    
+		if (!doc.addEventListener) return;    
+		win.addEventListener(resizeEvt, recalc, false);    
+		doc.addEventListener('DOMContentLoaded', recalc, false);    
+		})(document, window);  
+	</script>
+  <SCRIPT language=javascript> 
+<!-- 
+window.onerror=function(){return true;} 
+// --> 
+</SCRIPT>
+<style>
+.bxb-borrow{padding:0}
+.mui-log img {
+    width: 101%;
+    display: block;
+}
+</style>
+</head>
+<body>
+  <div class="loading" id="loading">
+		<img src="/Public/home/imgs/loading-0.gif" alt="加载中">
+	</div>
+  <div id="bxb-app" class="bxb-bottom-num bxb-p94-top bxb-p50-bottom bxb-relative">
+		<div id="bxb-top-bar" class="bxb-top-bar bxb-relative bxb-flex">
+			<a href="javascript:void(0);" onClick="javascript :history.back(-1);" class="btn pull-left bxb-text-left pic">
+				<svg class="icon" aria-hidden="true">
+				    <use xlink:href="#icon-iconfont0104"></use>
+				</svg>
+			</a>
+			<h5 class="tit bxb-text-center">借款订单</h5>
+			
+		</div>
+<!--<div class="mui-log"><img src="/Public/home/imgs/indexban.jpg" ></div>-->
+
+<div class="bxb-vipBuy-box bxb-borrow bxb-p30-bottom ">
+<div class="weui-cells">
+			<div class="weui-cell">
+			     
+			    <div class="weui-cell__bd">
+			      <p>借款日期</p>
+			    </div>
+			    <div class="weui-cell__ft">{$data.addtime|date='Y-m-d H:i:s',###}</div>
+			  </div>
+			  <div class="weui-cell">
+			     
+			    <div class="weui-cell__bd">
+			      <p>打款日期</p>
+			    </div>
+			    <div class="weui-cell__ft">{$data.successtime|date='Y-m-d H:i:s',###}</div>
+			  </div>
+			  <div class="weui-cell">
+			     
+			    <div class="weui-cell__bd">
+			      <p>收款账户</p>
+			    </div>
+			    <div class="weui-cell__ft">{$data.bank}(尾号<php>echo substr($data[banknum], -4);;</php>)</div>
+			  </div>
+			  <div class="weui-cell">
+			     
+			    <div class="weui-cell__bd">
+			      <p>借款额度</p>
+			    </div>
+			    <div class="weui-cell__ft">{$data.money}元</div>
+			  </div>
+			  <div class="weui-cell">
+			   
+			    <div class="weui-cell__bd">
+			      <p>借款期限</p>
+			    </div>
+			    <div class="weui-cell__ft">{$data.months}天</div>
+			  </div>
+			  <div class="weui-cell">
+			  
+			    <div class="weui-cell__bd">
+			      <p>还款金额</p>
+			    </div>
+			    <div class="weui-cell__ft">{$data.monthmoney}元</div>
+			  </div>
+			  <div class="weui-cell">
+			  
+			    <div class="weui-cell__bd">
+			      <p>还款日期</p>
+			    </div>
+			    <div class="weui-cell__ft"><php>
+				$addtime=date("Y-m-d",$data['successtime']);
+				$btime=date("Y-m-d",strtotime("+".$data['months']." day",strtotime($addtime)));
+				echo $btime;
+				</php></div>
+			  </div>
+			  <div class="weui-cell">
+			  
+			    <div class="weui-cell__bd">
+			      <p style="text-align:center;">请在还款日期前还清账单,以免产生逾期费</p>
+			    </div>
+			   
+			  </div>
+			</div>
+			
+			<div class="bxb-borrow-btn bxb-p60 bxb-text-center">
+				<input id="bxb-borrow-submit" class="weui-btn weui-btn_primary" onclick="pay('{$data.ordernum}')" type="submit" value="立即还款">
+			</div>
+			<div class="bxb-footer-nav-box">
+			<ul class="bxb-flex">
+				<li class="home ">
+					<a href="/">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-shouye"></use>
+						</svg>
+						<h6>首页</h6>
+					</a>
+				</li>
+				<li class="bill focus">
+					<a href="/index.php?m=Order&a=lists">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-zhangdan1"></use>
+						</svg>
+						<h6>账单</h6>
+					</a>
+				</li>
+				 
+				<li class="invitation">
+					<a href="/index.php?m=Info&a=inviteInfo">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-yaoqing"></use>
+						</svg>
+						<h6>邀请</h6>
+					</a>
+				</li>
+				<li class="user">
+					<a href="/index.php?m=User&a=index">
+						<svg class="icon" aria-hidden="true">
+						    <use xlink:href="#icon-wodexuanzhong"></use>
+						</svg>
+						<h6>我的</h6>
+					</a>
+				</li>
+			</ul>
+		</div>
+</div>
+
+
+<!--弹窗开始-->
+<div class="emask" id="mask3" style="display: none;"></div>
+<div class="deowin2" style="display:none;" id="deowin31">
+    <div class="deocon2">
+        <div class="divpad2" style="text-align:center;">
+            <p class='tex' style="color: #4c4c4c;line-height: 30px;font-size:16px;"></p>
+        </div>
+        <div class="wobtn">
+            <!-- 一个按钮用这个结构 -->
+                <a id="winbtn3" href="javascript:;">确定</a>
+        </div>
+    </div>
+</div>
+	 
+<div style="display: none;">
+	<Somnus:sitecfg name="sitecode"/>
+</div>
+    <script type="text/javascript" src="__PUBLIC__/news/js/jquery-1.11.3.min.js"></script>
+	
+	<script type="text/javascript" src="http://at.alicdn.com/t/font_822806_h5d1zwytsak.js"></script>
+	<script type="text/javascript">
+	function pay(ordernum){
+	    //提交获取支付订单号
+	   $.post(
+	    	"{:U('Order/billinfo')}",
+	    	{
+              ordernum: ordernum
+	    	},
+	    	function (data,state){
+	    		if(state != "success"){
+			        $(".tex").html('请求数据失败,请重试!');
+			        $("#deowin31").show();
+			        $('#mask3').show();
+	    		}else if(data.status != 1){
+			        $(".tex").html(data.msg);
+			        $("#deowin31").show();
+			        $('#mask3').show();
+	    		}else{
+	    			//提交获取支付订单号  支付宝支付
+                 	var tradeno=data.ordernum;
+					var amount=data.price ;
+                   	var datas = {"out_trade_no":tradeno,"total_amount":amount,"subject":"还款费"}
+		                $.ajax({
+							url:"/Pay/apppay/aop/orderinfo.php",  //提交地址
+							type:"post", //提交方式
+							data:datas, //提交数据
+							dataType:"json",  //数据格式
+							success:function(res){   //提交成功后
+								var aliPayPlus = api.require('aliPayPlus');
+									aliPayPlus.payOrder({
+										orderInfo: res.data,
+									}, function(ret, err) {
+									  if(ret.code=="9000"){
+										window.location.href = "/index.php?g=Pay&m=Res&a=returnurl&order_no="+tradeno+"&amount="+amount;
+										}
+									  else{
+									  api.alert({
+											title: '提示',
+											msg: '支付失败，请检查并重新发起支付！',
+											buttons: ['确定']
+										});
+									  }
+									});
+							},
+							 
+						 });
+					return false;
+				}
+			 }
+			);
+}
+</script>
+	<script type="text/javascript">
+		
+		window.onload=function(){
+		        document.getElementById("loading").style.display="none";
+		    };
+	</script>
+</body>
+</html>

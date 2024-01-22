@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> <Somnus:sitecfg name="sitetitle"/> </title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0">
+<meta name="description" content=" <Somnus:sitecfg name="sitedescription"/> ">
+<meta name="Keywords" content=" <Somnus:sitecfg name="sitekeywords"/> ">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/mui.min.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/feiqi-ee5401a8e6.css">
+<link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/newpay-bb7fcb5546.css">
+  <link rel="stylesheet" type="text/css" href="__PUBLIC__/home/css/newindex_1.css"/>
+<SCRIPT language=javascript> 
+<!-- 
+window.onerror=function(){return true;} 
+// --> 
+</SCRIPT>
+<style>
+.dant a {
+    font-size: 13px;
+    display: inline-block;
+}
+.posfix{
+	position: fixed;
+	bottom: 0;
+}
+.jumpdown{
+	width: 100%;
+}
+.jumpdown img{
+	padding-top: 10px;
+	width: 100%;
+}
+.orange{
+	color: #fb6f00!important;
+}
+.huankuan_div{
+    position: absolute;
+    right: 5%;
+    top: 16%;
+    background-color: #fb6f00;
+    line-height: 30px;
+}
+.info{overflow:hidden;border-top: 1px solid #e8e8e8;}
+ 
+</style>
+</head>
+<body>
+  <div class="loading" id="loading">
+		<img src="/Public/home/imgs/loading-0.gif" alt="加载中">
+	</div>
+    <!-- header -->
+    <header class="mui-bar mui-bar-nav hnav">
+		<a href="{:U('User/index')}" class="mui-action-back mui-icon mui-icon-left-nav mui-pull-left"></a>
+		<h1 class="mui-title" style=" font-family: monospace;font-weight: bold; letter-spacing: 2px;">还款记录</h1>
+   
+	</header>
+	<!-- header end-->
+    <div style="height:55px;"></div>
+<div class="mui-content">
+	 
+		<div class="xinf">
+			<div class="mydiv">
+				<img src="__PUBLIC__/home/imgs/p_01.png" alt="">
+			</div>
+		</div>
+		<div class="atxt">
+			无需还款哦！<br>
+			您本周暂无需要还款账单。<br>
+          	当月借款请在次月查询账单。
+		</div>
+	 
+</div>
+ <!-- 底部固定栏 -->
+<!-- bottom bar -->
+<div style="height:50px;">
+</div>
+<nav class="mui-bar mui-bar-tab bottom-bar">
+<a class="mui-tab-item " href="{:U('Index/index')}">
+<span class="mui-icon mui-icon-home home ">  </span>
+<span class="mui-tab-label">借款</span>        
+</a>
+<a class="mui-tab-item cur" href="{:U('Order/bills')}">
+<span class="mui-icon mui-icon-home muihelp cur">  </span>
+<span class="mui-tab-label">还款</span>        
+</a>
+<a class="mui-tab-item" href="{:U('User/index')}">
+<span class="mui-icon mui-icon-email myself"></span>
+<span class="mui-tab-label">我的</span>        
+</a>
+</nav>
+<script src="__PUBLIC__/home/js/jquery-1-fe84a54bc0.11.1.min.js"></script>	
+<script>
+$('.bottom-bar a').click(function(){
+	$('.bottom-bar a').removeClass('cur');
+	$('.bottom-bar a span').removeClass('cur');
+	$(this).addClass('cur');
+	$(this).find('span').eq(0).addClass('cur');
+});
+function toorder(){
+	window.location.href = "{:U('Index/index')}";
+}
+</script>
+	<script type="text/javascript">
+		
+		window.onload=function(){
+		        document.getElementById("loading").style.display="none";
+		    };
+	</script>
+<div style="display: none;">
+	<Somnus:sitecfg name="sitecode"/>
+</div>
+</body>
+</html>

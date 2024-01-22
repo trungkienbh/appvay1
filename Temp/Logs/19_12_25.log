@@ -1,0 +1,1264 @@
+[ 2019-12-25T17:28:28+08:00 ] 112.96.195.141 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000444s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:31:59+08:00 ] 112.96.195.141 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000418s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000469s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:35:57+08:00 ] 14.25.57.143 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000416s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000464s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:35:59+08:00 ] 58.60.9.84 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000461s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000513s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:36:36+08:00 ] 14.25.57.143 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000641s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000704s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:37:01+08:00 ] 14.25.57.143 /index.php?m=User&a=sendsmscode
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000574s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE ( `phone` = '18907671673' ) LIMIT 1   [ RunTime:0.000541s ]
+SQL: SHOW COLUMNS FROM `smscode` [ RunTime:0.000426s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `smscode` WHERE ( `phone` = '18907671673' ) AND ( `sendtime` > 1577203200 ) LIMIT 1   [ RunTime:0.000577s ]
+SQL: INSERT INTO `smscode` (`phone`,`code`,`sendtime`) VALUES ('18907671673','568756',1577266621) [ RunTime:0.000155s ]
+
+[ 2019-12-25T17:37:42+08:00 ] 14.25.57.143 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000437s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:37:51+08:00 ] 14.25.57.143 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005650s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005712s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:38:04+08:00 ] 14.25.57.143 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000425s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:39:06+08:00 ] 112.97.63.65 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.006237s ]
+INFO: [ route_check ] --END-- [ RunTime:0.006294s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:40:00+08:00 ] 112.97.63.65 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005346s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005406s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:40:39+08:00 ] 112.97.63.65 /index.php?m=User&a=sendsmscode
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005295s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005345s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000610s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE ( `phone` = '17620916618' ) LIMIT 1   [ RunTime:0.000526s ]
+SQL: SHOW COLUMNS FROM `smscode` [ RunTime:0.000427s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `smscode` WHERE ( `phone` = '17620916618' ) AND ( `sendtime` > 1577203200 ) LIMIT 1   [ RunTime:0.000589s ]
+SQL: INSERT INTO `smscode` (`phone`,`code`,`sendtime`) VALUES ('17620916618','700747',1577266839) [ RunTime:0.000162s ]
+
+[ 2019-12-25T17:43:15+08:00 ] 114.101.228.237 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000419s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000468s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:43:30+08:00 ] 114.101.228.237 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000436s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000489s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:43:32+08:00 ] 114.101.228.237 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000423s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:43:33+08:00 ] 114.101.228.237 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000421s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000465s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:48:03+08:00 ] 117.136.32.53 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000440s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:48:57+08:00 ] 112.96.164.99 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000743s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000808s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:53:12+08:00 ] 112.96.164.99 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000435s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000480s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:53:24+08:00 ] 112.96.164.99 /index.php?m=User&a=signup
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005393s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005442s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000611s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE ( `phone` = '13660627446' ) LIMIT 1   [ RunTime:0.000571s ]
+SQL: INSERT INTO `user` (`phone`,`password`,`invitor`,`addtime`) VALUES ('13660627446','7f14ce4ce807cd19581f5eb2729e12438deb009b','',1577267604) [ RunTime:0.000237s ]
+
+[ 2019-12-25T17:53:32+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000341s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000384s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000742s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000295s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000470s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000238s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000453s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000148s ]
+
+[ 2019-12-25T17:53:43+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000762s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000641s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000277s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000234s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000631s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000129s ]
+
+[ 2019-12-25T17:53:53+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000361s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000747s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000491s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000269s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000459s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000138s ]
+
+[ 2019-12-25T17:53:57+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000380s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000429s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000740s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000297s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000475s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000176s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000443s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000122s ]
+
+[ 2019-12-25T17:54:54+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000727s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000322s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000493s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000178s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000571s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000177s ]
+
+[ 2019-12-25T17:56:25+08:00 ] 112.97.63.65 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000418s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000466s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T17:56:50+08:00 ] 112.97.63.65 /index.php?m=User&a=signup
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000393s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000568s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE ( `phone` = '13533515571' ) LIMIT 1   [ RunTime:0.000143s ]
+SQL: INSERT INTO `user` (`phone`,`password`,`invitor`,`addtime`) VALUES ('13533515571','10470c3b4b1fed12c3baac014be15fac67c6e815','',1577267810) [ RunTime:0.000165s ]
+
+[ 2019-12-25T17:56:51+08:00 ] 112.97.63.65 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000405s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000456s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.001034s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000433s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000482s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000219s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000443s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13533515571' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000124s ]
+
+[ 2019-12-25T17:59:03+08:00 ] 112.97.63.65 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000722s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000505s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000212s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000433s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13533515571' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000142s ]
+
+[ 2019-12-25T18:02:33+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000378s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000745s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000502s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000221s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000444s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000124s ]
+
+[ 2019-12-25T18:03:33+08:00 ] 112.96.164.99 /index.php/Common/verify/captcha?token=&r=0.7801145216737295
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000450s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000503s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T18:04:08+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000320s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000727s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000274s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000483s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000173s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000440s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000120s ]
+
+[ 2019-12-25T18:04:31+08:00 ] 112.97.63.65 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000438s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000487s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T18:05:50+08:00 ] 110.156.59.200 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000447s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000492s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T18:05:53+08:00 ] 110.156.59.200 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000412s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000471s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T18:05:59+08:00 ] 110.156.59.200 /index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000423s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000603s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `user` WHERE ( `phone` = '17329111656' ) AND ( `password` = '10470c3b4b1fed12c3baac014be15fac67c6e815' ) LIMIT 1   [ RunTime:0.000205s ]
+
+[ 2019-12-25T18:05:59+08:00 ] 110.156.59.200 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000435s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000485s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T18:06:03+08:00 ] 110.156.59.200 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000321s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000701s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '17329111656' ) LIMIT 1   [ RunTime:0.000310s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000479s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '17329111656' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000180s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '17329111656' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000164s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000419s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '17329111656' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000116s ]
+
+[ 2019-12-25T18:06:03+08:00 ] 110.156.59.200 /index.php?m=Order&a=daikuan&trueorder=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000386s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000994s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '17329111656' ) LIMIT 1   [ RunTime:0.000417s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000762s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '17329111656' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000263s ]
+NOTIC: [8] Uninitialized string offset: 29 /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/OrderAction.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `payorder` [ RunTime:0.000588s ]
+SQL: INSERT INTO `payorder` (`ordernum`,`type`,`money`,`addtime`,`status`,`user`) VALUES ('IC25683632362425','审核费',0,1577268363,1,'17329111656') [ RunTime:0.000249s ]
+SQL: INSERT INTO `order` (`user`,`money`,`months`,`monthmoney`,`donemonth`,`addtime`,`status`,`pid`,`bank`,`banknum`,`ordernum`) VALUES ('17329111656',8000,30,8240,0,1577268363,1,1188,'招商银行','287468278268268274','IC25683632362425') [ RunTime:0.000285s ]
+
+[ 2019-12-25T18:07:13+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005361s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005417s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000724s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000529s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000197s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000433s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000178s ]
+
+[ 2019-12-25T18:07:32+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000395s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000707s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000273s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000532s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000229s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000179s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000469s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000132s ]
+
+[ 2019-12-25T18:10:25+08:00 ] 112.97.63.65 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000343s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000733s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000261s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000498s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000208s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000434s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13533515571' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000135s ]
+
+[ 2019-12-25T18:10:52+08:00 ] 112.97.63.65 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000731s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000272s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000483s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000202s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000498s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13533515571' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000131s ]
+
+[ 2019-12-25T18:11:28+08:00 ] 112.97.63.65 /index.php?m=Info&a=baseinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000725s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000259s ]
+SQL: UPDATE `userinfo` SET `name`='8882727',`usercard`='72627772777727727',`cardphoto_1`='/Upload/image/20191225/20191225181110_84239.jpg',`cardphoto_2`='/Upload/image/20191225/20191225181118_65150.jpg',`cardphoto_4`='/Upload/image/20191225/20191225181126_14191.jpg' WHERE ( `user` = '13533515571' ) [ RunTime:0.000212s ]
+
+[ 2019-12-25T18:11:57+08:00 ] 112.97.63.65 /index.php?m=Info&a=unitinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000398s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000743s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: UPDATE `userinfo` SET `personname_1`='Ueuueu',`personname_2`='48848484',`personphone_1`='15012992430',`personphone_2`='15012992430',`persongx_1`='父母',`persongx_2`='朋友' WHERE ( `user` = '13533515571' ) [ RunTime:0.000218s ]
+
+[ 2019-12-25T18:12:00+08:00 ] 112.97.63.65 /index.php/Common/verify/captcha?token=&r=0.11883149169527263
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000424s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000470s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T18:12:08+08:00 ] 112.97.63.65 /index.php?m=Info&a=phoneinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000317s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000357s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000723s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000284s ]
+SQL: UPDATE `userinfo` SET `phone`='888888' WHERE ( `user` = '13533515571' ) [ RunTime:0.000229s ]
+
+[ 2019-12-25T18:12:22+08:00 ] 112.97.63.65 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000703s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000264s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000475s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000170s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000417s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13533515571' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000114s ]
+
+[ 2019-12-25T18:12:33+08:00 ] 112.97.63.65 /index.php?m=Info&a=bankinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000347s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000408s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000726s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000268s ]
+SQL: UPDATE `userinfo` SET `bankname`='工商银行',`bankcard`='6222023602096108395' WHERE ( `user` = '13533515571' ) [ RunTime:0.000211s ]
+
+[ 2019-12-25T18:12:37+08:00 ] 112.97.63.65 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000376s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000700s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000266s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000480s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000199s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000479s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13533515571' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000156s ]
+
+[ 2019-12-25T18:12:37+08:00 ] 112.97.63.65 /index.php?m=Order&a=daikuan&trueorder=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000325s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000786s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000289s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000453s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000186s ]
+NOTIC: [8] Uninitialized string offset: 29 /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/OrderAction.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `payorder` [ RunTime:0.000453s ]
+SQL: INSERT INTO `payorder` (`ordernum`,`type`,`money`,`addtime`,`status`,`user`) VALUES ('IC25687571640726','审核费',0,1577268757,1,'13533515571') [ RunTime:0.000200s ]
+SQL: INSERT INTO `order` (`user`,`money`,`months`,`monthmoney`,`donemonth`,`addtime`,`status`,`pid`,`bank`,`banknum`,`ordernum`) VALUES ('13533515571',8000,30,8240,0,1577268757,1,1189,'工商银行','6222023602096108395','IC25687571640726') [ RunTime:0.000182s ]
+
+[ 2019-12-25T18:12:55+08:00 ] 112.97.63.65 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000388s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000718s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13533515571' ) LIMIT 1   [ RunTime:0.000260s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000455s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000208s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13533515571' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000191s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000411s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13533515571' ) AND ( `jkorder` = 'IC25687571640726' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000114s ]
+
+[ 2019-12-25T18:17:04+08:00 ] 110.156.59.200 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000517s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000566s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T18:17:06+08:00 ] 110.156.59.200 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000323s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000369s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000715s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '17329111656' ) LIMIT 1   [ RunTime:0.000301s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000479s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '17329111656' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000194s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '17329111656' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000174s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000418s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '17329111656' ) AND ( `jkorder` = 'IC25683632362425' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000136s ]
+
+[ 2019-12-25T18:17:11+08:00 ] 110.156.59.200 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000476s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000528s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T18:49:07+08:00 ] 112.96.164.99 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000362s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000418s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000749s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000276s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000502s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000201s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000200s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000493s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000124s ]
+
+[ 2019-12-25T18:57:07+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000418s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000473s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000748s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000354s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000500s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000490s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000129s ]
+
+[ 2019-12-25T18:58:31+08:00 ] 223.104.1.245 /index.php?m=Info&a=baseinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000365s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000411s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000788s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000280s ]
+SQL: UPDATE `userinfo` SET `name`='民',`usercard`='460034198708887894',`cardphoto_1`='/Upload/image/20191225/20191225185813_42694.jpg',`cardphoto_2`='/Upload/image/20191225/20191225185737_25760.jpg',`cardphoto_4`='/Upload/image/20191225/20191225185823_66713.jpg' WHERE ( `user` = '13660627446' ) [ RunTime:0.000240s ]
+
+[ 2019-12-25T18:58:56+08:00 ] 223.104.1.245 /index.php?m=Info&a=unitinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000333s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000720s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000308s ]
+SQL: UPDATE `userinfo` SET `personname_1`='救护',`personname_2`='就会',`personphone_1`='1504584884884',`personphone_2`='15012992430',`persongx_1`='父母',`persongx_2`='兄妹' WHERE ( `user` = '13660627446' ) [ RunTime:0.000231s ]
+
+[ 2019-12-25T18:58:58+08:00 ] 223.104.1.245 /index.php/Common/verify/captcha?token=&r=0.22344722522329996
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000422s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T18:59:05+08:00 ] 223.104.1.245 /index.php/Common/verify/captcha?token=&r=0.28107401173878555
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005137s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005191s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T18:59:08+08:00 ] 223.104.1.245 /index.php?m=Info&a=phoneinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000326s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000370s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000725s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000281s ]
+SQL: UPDATE `userinfo` SET `phone`='343134' WHERE ( `user` = '13660627446' ) [ RunTime:0.000226s ]
+
+[ 2019-12-25T18:59:25+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000348s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000756s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000467s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000175s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000158s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000432s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000117s ]
+
+[ 2019-12-25T18:59:40+08:00 ] 223.104.1.245 /index.php?m=Info&a=bankinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000328s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000372s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000723s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000300s ]
+SQL: UPDATE `userinfo` SET `bankname`='工商银行',`bankcard`='62220236020648484' WHERE ( `user` = '13660627446' ) [ RunTime:0.000235s ]
+
+[ 2019-12-25T18:59:51+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000353s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000399s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000723s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000521s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000176s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000159s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000431s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000150s ]
+
+[ 2019-12-25T18:59:51+08:00 ] 223.104.1.245 /index.php?m=Order&a=daikuan&trueorder=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000374s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000424s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000726s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000473s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000205s ]
+NOTIC: [8] Uninitialized string offset: 29 /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/OrderAction.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `payorder` [ RunTime:0.000451s ]
+SQL: INSERT INTO `payorder` (`ordernum`,`type`,`money`,`addtime`,`status`,`user`) VALUES ('IC25715918822830','审核费',0,1577271591,1,'13660627446') [ RunTime:0.000176s ]
+SQL: INSERT INTO `order` (`user`,`money`,`months`,`monthmoney`,`donemonth`,`addtime`,`status`,`pid`,`bank`,`banknum`,`ordernum`) VALUES ('13660627446',8000,30,8240,0,1577271591,1,1190,'工商银行','62220236020648484','IC25715918822830') [ RunTime:0.000165s ]
+
+[ 2019-12-25T19:00:15+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000749s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000302s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000466s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000199s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000198s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000553s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000120s ]
+
+[ 2019-12-25T19:02:16+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000318s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000363s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000736s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000311s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000480s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000211s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000177s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000420s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000111s ]
+
+[ 2019-12-25T19:03:21+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000356s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.002396s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.001256s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000314s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000505s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000203s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000182s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000504s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000119s ]
+
+[ 2019-12-25T19:03:26+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000345s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000391s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000719s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000282s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000486s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000203s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000428s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000124s ]
+
+[ 2019-12-25T19:03:30+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000360s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000402s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000768s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000287s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000477s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000210s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000186s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000453s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000115s ]
+
+[ 2019-12-25T19:03:43+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000338s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000738s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000278s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000502s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000298s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000195s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000518s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000162s ]
+
+[ 2019-12-25T19:03:46+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000315s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000358s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000735s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000527s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000202s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000180s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000419s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000120s ]
+
+[ 2019-12-25T19:03:49+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000360s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000749s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000293s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000485s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000201s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000181s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000444s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000122s ]
+
+[ 2019-12-25T19:10:14+08:00 ] 110.156.59.200 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000440s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000488s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T19:16:47+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005308s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005387s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000756s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000306s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000466s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000235s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000462s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000119s ]
+
+[ 2019-12-25T19:25:15+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000352s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000453s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000609s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: UPDATE `order` SET `status`=3,`updatetime`=1577273115 WHERE ( `id` = 1005 ) [ RunTime:0.000244s ]
+
+[ 2019-12-25T19:25:15+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000351s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000397s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000670s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000146s ]
+SQL: UPDATE `order` SET `status`=3,`updatetime`=1577273115 WHERE ( `id` = 1005 ) [ RunTime:0.000159s ]
+
+[ 2019-12-25T19:25:40+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000673s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000139s ]
+SQL: UPDATE `order` SET `status`=4,`updatetime`=1577273140 WHERE ( `id` = 1005 ) [ RunTime:0.000181s ]
+
+[ 2019-12-25T19:25:57+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000350s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000392s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000628s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000134s ]
+SQL: UPDATE `order` SET `status`=2,`successtime`=1577273157 WHERE ( `id` = 1005 ) [ RunTime:0.000187s ]
+
+[ 2019-12-25T19:25:57+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000411s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000461s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000609s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000147s ]
+SQL: UPDATE `order` SET `status`=2,`successtime`=1577273157 WHERE ( `id` = 1005 ) [ RunTime:0.000154s ]
+
+[ 2019-12-25T19:26:04+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000334s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000381s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000605s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000132s ]
+SQL: UPDATE `order` SET `status`=2,`successtime`=1577273164 WHERE ( `id` = 1005 ) [ RunTime:0.000175s ]
+
+[ 2019-12-25T19:26:05+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000324s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000609s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000135s ]
+SQL: UPDATE `order` SET `status`=2,`successtime`=1577273165 WHERE ( `id` = 1005 ) [ RunTime:0.000182s ]
+
+[ 2019-12-25T19:26:40+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000342s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000389s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000605s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000152s ]
+SQL: UPDATE `order` SET `status`=3,`updatetime`=1577273200 WHERE ( `id` = 1005 ) [ RunTime:0.000183s ]
+
+[ 2019-12-25T19:28:09+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000450s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000501s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000766s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000346s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000586s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000215s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000199s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000469s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000139s ]
+
+[ 2019-12-25T19:28:11+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000336s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000385s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000760s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000290s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000508s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000198s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000204s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000499s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000125s ]
+
+[ 2019-12-25T19:28:27+08:00 ] 223.104.1.245 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005244s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005296s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.001166s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000288s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000460s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.005204s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000183s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000445s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = 'IC25715918822830' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000115s ]
+
+[ 2019-12-25T19:28:40+08:00 ] 223.104.1.245 /index.php?g=Admin&m=Daikuan&a=changestatus
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.005316s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.005366s ]
+NOTIC: [8] Undefined index: act /www/wwwroot/mw.221bk.cn/App/Lib/Action/Admin/DaikuanAction.class.php 第 159 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000657s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `order` WHERE ( `id` = 1005 ) LIMIT 1   [ RunTime:0.000148s ]
+SQL: UPDATE `order` SET `status`=3,`updatetime`=1577273320 WHERE ( `id` = 1005 ) [ RunTime:0.000197s ]
+
+[ 2019-12-25T19:35:35+08:00 ] 112.96.109.217 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005440s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005490s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T19:35:42+08:00 ] 112.96.109.217 /index.php?m=User&a=login
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000327s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000396s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000589s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `user` WHERE ( `phone` = '13660627446' ) AND ( `password` = '7f14ce4ce807cd19581f5eb2729e12438deb009b' ) LIMIT 1   [ RunTime:0.000147s ]
+
+[ 2019-12-25T19:36:00+08:00 ] 112.96.109.217 /index.php?m=User&a=signup
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000330s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000377s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.000614s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE ( `phone` = '13660627446' ) LIMIT 1   [ RunTime:0.000145s ]
+SQL: INSERT INTO `user` (`phone`,`password`,`invitor`,`addtime`) VALUES ('13660627446','10470c3b4b1fed12c3baac014be15fac67c6e815','',1577273760) [ RunTime:0.000183s ]
+
+[ 2019-12-25T19:36:02+08:00 ] 112.96.109.217 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000339s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000387s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000771s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000296s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000487s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000171s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000155s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000448s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '13660627446' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000131s ]
+
+[ 2019-12-25T19:36:02+08:00 ] 112.96.109.217 /index.php?m=Order&a=daikuan&trueorder=1
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000322s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000367s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000744s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '13660627446' ) LIMIT 1   [ RunTime:0.000291s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000483s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '13660627446' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000200s ]
+NOTIC: [8] Uninitialized string offset: 29 /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/OrderAction.class.php 第 146 行.
+SQL: SHOW COLUMNS FROM `payorder` [ RunTime:0.005579s ]
+SQL: INSERT INTO `payorder` (`ordernum`,`type`,`money`,`addtime`,`status`,`user`) VALUES ('IC25737628402178','审核费',0,1577273762,1,'13660627446') [ RunTime:0.000192s ]
+SQL: INSERT INTO `order` (`user`,`money`,`months`,`monthmoney`,`donemonth`,`addtime`,`status`,`pid`,`bank`,`banknum`,`ordernum`) VALUES ('13660627446',8000,30,8240,0,1577273762,1,1191,'工商银行','62220236020648484','IC25737628402178') [ RunTime:0.000173s ]
+
+[ 2019-12-25T19:50:13+08:00 ] 220.179.229.111 /index.php/Common/verify/
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.001265s ]
+INFO: [ route_check ] --END-- [ RunTime:0.001386s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T19:50:38+08:00 ] 220.179.229.111 /index.php?m=User&a=signup
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000331s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000394s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `user` [ RunTime:0.002789s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT COUNT(*) AS tp_count FROM `user` WHERE ( `phone` = '15868686868' ) LIMIT 1   [ RunTime:0.000775s ]
+SQL: INSERT INTO `user` (`phone`,`password`,`invitor`,`addtime`) VALUES ('15868686868','10470c3b4b1fed12c3baac014be15fac67c6e815','',1577274638) [ RunTime:0.000897s ]
+
+[ 2019-12-25T19:51:20+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000417s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000463s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T19:57:00+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000439s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000493s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T19:57:09+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000466s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T19:57:11+08:00 ] 220.179.229.111 /index.php?m=Order&a=checkorder
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000364s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000412s ]
+NOTIC: [8] Undefined index: user /www/wwwroot/mw.221bk.cn/App/Lib/Action/Home/CommonAction.class.php 第 24 行.
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000692s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '15868686868' ) LIMIT 1   [ RunTime:0.000243s ]
+SQL: SHOW COLUMNS FROM `order` [ RunTime:0.000472s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '15868686868' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000228s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `order` WHERE ( `user` = '15868686868' ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000224s ]
+SQL: SHOW COLUMNS FROM `bills` [ RunTime:0.000433s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `bills` WHERE ( `user` = '15868686868' ) AND ( `jkorder` = null ) ORDER BY addtime Desc LIMIT 1   [ RunTime:0.000195s ]
+
+[ 2019-12-25T19:57:17+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000425s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000474s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T19:57:26+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000482s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000539s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T19:57:26+08:00 ] 220.179.229.111 /index.php/Common/verify/captcha?token=&r=0.8454681559403667
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000461s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000515s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+
+[ 2019-12-25T19:57:30+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000462s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000512s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T20:01:20+08:00 ] 220.179.229.111 /index.php?m=Info&a=baseinfo
+INFO: [ app_begin ] --START--
+INFO: ReadHtmlCache Behavior ::run [ RunTime:0.000314s ]
+INFO: [ app_begin ] --END-- [ RunTime:0.000353s ]
+NOTIC: [8192] mysql_connect(): The mysql extension is deprecated and will be removed in the future: use mysqli or PDO instead /www/wwwroot/mw.221bk.cn/Base/Lib/Driver/Db/DbMysql.class.php 第 55 行.
+SQL: SHOW COLUMNS FROM `userinfo` [ RunTime:0.000757s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Db.class.php 第 605 行.
+SQL: SELECT * FROM `userinfo` WHERE ( `user` = '15868686868' ) LIMIT 1   [ RunTime:0.000298s ]
+SQL: UPDATE `userinfo` SET `name`='11',`usercard`='111',`cardphoto_1`='/Upload/image/20191225/20191225200112_41629.png',`cardphoto_2`='/Upload/image/20191225/20191225200115_57339.png',`cardphoto_4`='/Upload/image/20191225/20191225200119_75285.png' WHERE ( `user` = '15868686868' ) [ RunTime:0.000201s ]
+
+[ 2019-12-25T20:05:04+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000507s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T20:07:15+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000441s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000491s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T20:07:21+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.005469s ]
+INFO: [ route_check ] --END-- [ RunTime:0.005526s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+
+[ 2019-12-25T20:07:29+08:00 ] 220.179.229.111 /Public/news/js/swiper.min.js.map
+INFO: [ route_check ] --START--
+INFO: CheckRoute Behavior ::run [ RunTime:0.000453s ]
+INFO: [ route_check ] --END-- [ RunTime:0.000505s ]
+NOTIC: [8192] preg_replace(): The /e modifier is deprecated, use preg_replace_callback instead /www/wwwroot/mw.221bk.cn/Base/Lib/Core/Dispatcher.class.php 第 132 行.
+ERR: 无法加载模块:Public
+

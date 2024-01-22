@@ -1,0 +1,99 @@
+<h3>{$title}</h3>
+<script type="text/javascript">
+    $(function(){ $(".idTabs").idTabs(); });
+</script>
+<div class="idTabs">
+  <ul class="tab">
+    <li><a href="#main">常规设置</a></li>
+    <li><a href="#daikuan">贷款设置</a></li>
+    <li><a href="#api">接口设置</a></li>
+    <li><a href="/index.php?g=Admin&m=Article&a=addcat">二维码收\付款</a></li>
+  </ul>
+</div>
+<form action="{:U(GROUP_NAME.'/Article/add')}" method="post">
+    <table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+        <tr>
+          <th width="90">名称</th>
+          <th>内容</th>
+        </tr>
+        <tr>
+          <td align="right">站点名称</td>
+          <td><input type="text" name="sitename" value="{:C('cfg_sitename')}" size="80" class="inpMain" />          </td>
+        </tr>
+        <tr>
+          <td align="right">站点标题</td>
+          <td><input type="text" name="sitetitle" value="{:C('cfg_sitetitle')}" size="80" class="inpMain" />          </td>
+        </tr>
+        <tr>
+          <td align="right">站点地址</td>
+          <td><input type="text" name="siteurl" value="{:C('cfg_siteurl')}" size="80" class="inpMain" />          </td>
+        </tr>
+        <tr>
+          <td align="right">站点关键字</td>
+          <td><input type="text" name="sitekeywords" value="{:C('cfg_sitekeywords')}" size="80" class="inpMain" />          </td>
+        </tr>
+    </table>
+</form>
+<script>
+    //上传缩略图
+    $(function (){
+        //如果有图片就显示
+        if($("#thumbnail").val() != '' && $("#thumbnail").val() != null){
+            $("#res_show_img").show();
+            $("#res_show_img").html('<img src="'+$("#thumbnail").val()+'" width="150px">');
+        }
+
+        $("#Upload_img").click(function (){
+            $("#show_Img").html('');
+            $("#show_Img").css('display','none');
+            $("#imgFile").click();
+        });
+        $("#imgFile").change(function(){
+            $("#Upload_img").html('上传中...');
+            var tmp_path = $("#imgFile").val();
+            if(tmp_path != '' && tmp_path != null){
+                var pic = $('#imgFile')[0].files[0];
+                var fd = new FormData();
+                fd.append('imgFile', pic);
+                $.ajax({
+                    url:"__PUBLIC__/main/js/kindeditor/php/upload_json.php",
+                    type:"post",
+                    dataType:'json',
+                    data: fd,
+                    cache: false,
+                    contentType: false,
+                    processData: false,
+                    success:function(data){
+                        if(data && data.error == '0'){
+                            $("#res_show_img").show();
+                            var imgurl = data.url;
+                            $("#res_show_img").html('<img src="'+imgurl+'" width="150px">');
+                            $("#thumbnail").val(imgurl);
+                            layer.msg('上传成功');
+                        }else{
+                            layer.msg('上传出错了...');
+                        }
+                        $("#Upload_img").html('重新上传');
+                    },
+                    error:function (){
+                        $("#Upload_img").html('重新上传');
+                    }
+                });
+            }
+        });
+    });
+</script>
+<table width="100%" border="0" cellpadding="8" cellspacing="0" class="tableBasic">
+  <tr>
+    <td align="right"><div align="left">缩略图</div></td>
+    <td><div align="left">
+      <button id="Upload_img" class="btn" type="button">上传</button>
+    </div>
+    <div style="display: none;">
+          <div align="left">
+            <input id="imgFile" type="file" name="imgFile" style="display: none;" />
+            </div>
+    </div>
+      <div id="res_show_img" style="display: none;"></div></td>
+  </tr>
+</table>
